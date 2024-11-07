@@ -1,0 +1,219 @@
+/* Загальні стилі */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: radial-gradient(circle at 60% 30%, #1d3b6b, #1d1d1d); 
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(circle at 70% 40%, rgba(0, 120, 255, 0.5), transparent),
+              linear-gradient(to bottom right, #0a0a0a, #3a220a); 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  position: relative; 
+  padding-top: 120px; 
+}
+
+
+.header {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content:space-around; 
+  align-items: center; 
+  padding: 20px;
+  background-color: rgba(51, 51, 51, 0.8); 
+  color: white; 
+  z-index: 1000; 
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px; 
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links:hover {
+  color: #ffa500; 
+}
+
+.main-content {
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+.learn-more {
+  background-color: #ffa500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+  background-color: #ff8c00;
+}
+
+.jellyfish-image {
+  width: 650px;
+  height: auto;
+  border-radius: 70%;
+  position: absolute;
+  top: 0%;
+  right: 2%;
+}
+
+.carousel {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.carousel-item {
+  margin: 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  width: 850px; 
+  height: 500px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.carousel-item img {
+  width: 300px; 
+  height: auto; 
+  border-radius: 10px; 
+  margin-bottom: 15px; 
+}
+
+.carousel-controls {
+  margin-top: 10px;
+}
+
+.carousel-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 10px; 
+}
+
+.carousel-button:hover {
+  background-color: rgba(255, 255, 255, 0.4); 
+}
+
+.cart-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px; 
+  height: 100%; 
+  background-color: rgba(255, 255, 255, 0.9); 
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  z-index: 1000; 
+  transition: transform 0.3s ease;
+}
+
+.cart-modal button {
+  background-color: #f44336; 
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.cart {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.close-button {
+  background-color: #ff5f5f;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item-info h3 {
+  margin: 0;
+  font-size: 16px;
+  color:#0a0a0a;
+}
+
+.item-info p {
+  margin: 0;
+  color: #666;
+}
+
+.remove-button {
+  background-color: #ff5f5f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.empty-cart {
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+  padding: 20px;
+}
+
